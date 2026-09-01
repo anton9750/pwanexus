@@ -1,0 +1,245 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 70;
+}
+
+.overlayVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(440px, 100vw);
+  background: var(--bg-elevated);
+  border-left: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.closeBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.closeBtn:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.attachBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.uploadNotice {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.attachmentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  max-height: 110px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.attachmentChip {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.5rem 0.25rem 0.7rem;
+  font-size: 0.75rem;
+  max-width: 100%;
+}
+
+.attachmentName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 220px;
+}
+
+.attachmentSize {
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+
+.attachmentRemove {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.attachmentRemove:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.chatWindow {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.bubble {
+  max-width: 88%;
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.userBubble {
+  align-self: flex-end;
+  background: var(--accent);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.modelBubble {
+  align-self: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-bottom-left-radius: 4px;
+}
+
+.typing {
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+.error {
+  margin: 0 1.25rem;
+  background: rgba(239, 68, 68, 0.12);
+  color: var(--danger);
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.inputForm {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: var(--accent);
+}
+
+.keySetup {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+  padding: 0.85rem 1.25rem 1.1rem;
+  flex-shrink: 0;
+}
+
+.keySetup summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.keyForm {
+  margin-top: 0.65rem;
+}
+
+.keyHint {
+  margin-bottom: 0.6rem;
+}
+
+.keyHint a {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.keyRow {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    width: 100vw;
+  }
+}

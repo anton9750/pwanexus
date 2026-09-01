@@ -1,0 +1,220 @@
+.panel {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 420px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: capitalize;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+.tabActive {
+  background: var(--accent-soft);
+  color: var(--accent-hover);
+  border-color: transparent;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input {
+  flex: 1;
+  min-width: 80px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.select {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.65rem;
+  color: var(--text);
+  font-size: 0.875rem;
+}
+
+.arrow {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 1.2rem;
+}
+
+.result {
+  flex: 1;
+  min-width: 80px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.75rem;
+  font-family: var(--mono);
+  font-size: 0.95rem;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  width: 100%;
+}
+
+.range {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.checks label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.codeBlock {
+  display: block;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  word-break: break-all;
+}
+
+.colorInput {
+  width: 48px;
+  height: 40px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  background: none;
+  padding: 0;
+}
+
+.swatch {
+  height: 64px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.metaLabel {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+  margin-bottom: 0.15rem;
+}
+
+.textarea {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.qrWrap {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  background: white;
+  border-radius: var(--radius-sm);
+}
+
+.clockGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.65rem;
+}
+
+.clockCard {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.clockLabel {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.clockTime {
+  font-family: var(--mono);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.clockDate {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.timerDisplay {
+  font-family: var(--mono);
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  padding: 0.5rem 0;
+}

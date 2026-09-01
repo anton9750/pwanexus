@@ -1,0 +1,168 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  max-width: 480px;
+}
+
+.usageBar {
+  margin-bottom: 1.25rem;
+}
+
+.usageTrack {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--bg-elevated);
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+
+.usageFill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.usageText {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.persistBtn {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  font-size: 0.78rem;
+}
+
+.dropzone {
+  border: 2px dashed var(--border-light);
+  border-radius: var(--radius);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  background: var(--bg-elevated);
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.dropzone.dragging {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.dropIcon {
+  font-size: 2rem;
+  color: var(--text-dim);
+  margin-bottom: 0.5rem;
+}
+
+.dropText {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.dropSub {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.limit {
+  margin-top: 0.85rem;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.error {
+  background: rgba(239, 68, 68, 0.12);
+  color: var(--danger);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: var(--bg);
+}
+
+.fileIcon {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: var(--bg-elevated);
+}
+
+.meta {
+  padding: 0.65rem 0.75rem 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.size {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+
+.actions {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.5rem 0.65rem 0.75rem;
+}
+
+.actions .btn {
+  flex: 1;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,145 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+}
+
+.addForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.addInput {
+  flex: 1;
+  min-width: 180px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+.addInput:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.prioritySelect {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.7rem;
+  color: var(--text);
+  font-size: 0.875rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 0.9rem;
+  transition: background 0.15s;
+}
+
+.item:hover {
+  background: var(--bg-hover);
+}
+
+.item.done .itemTitle {
+  text-decoration: line-through;
+  color: var(--text-dim);
+}
+
+.check {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 2px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  color: var(--success);
+  transition: all 0.15s;
+}
+
+.item.done .check {
+  background: rgba(34, 197, 94, 0.15);
+  border-color: var(--success);
+}
+
+.itemTitle {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.badge.low {
+  background: rgba(139, 155, 184, 0.2);
+  color: var(--text-muted);
+}
+
+.badge.medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--warning);
+}
+
+.badge.high {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--danger);
+}
+
+.deleteBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteBtn:hover {
+  color: var(--danger);
+  background: rgba(239, 68, 68, 0.1);
+}

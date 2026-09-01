@@ -1,0 +1,152 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  max-width: 560px;
+}
+
+.searchForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.input {
+  flex: 1;
+  min-width: 200px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: var(--accent);
+}
+
+.error {
+  background: rgba(239, 68, 68, 0.12);
+  color: var(--danger);
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.player {
+  margin-bottom: 1.5rem;
+}
+
+.iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: var(--radius);
+  background: black;
+}
+
+.nowPlayingTitle {
+  margin-top: 0.6rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.resultCard {
+  text-align: left;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.resultCard:hover {
+  border-color: var(--border-light);
+}
+
+.resultCard.active {
+  border-color: var(--accent);
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.resultMeta {
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.resultTitle {
+  font-size: 0.85rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.resultChannel {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.keySetup {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.keySetup summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.keyForm {
+  margin-top: 0.75rem;
+}
+
+.keyHint {
+  margin-bottom: 0.6rem;
+}
+
+.keyHint a {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.keyRow {
+  display: flex;
+  gap: 0.5rem;
+}

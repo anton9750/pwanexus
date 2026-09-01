@@ -1,0 +1,53 @@
+.dock {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  background: rgba(11, 15, 25, 0.95);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.dockHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.dockLabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dockActions {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.dockBtn {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.dockBtn:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.dock.collapsed iframe {
+  border: none;
+}

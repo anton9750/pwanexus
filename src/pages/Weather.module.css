@@ -1,0 +1,164 @@
+.header {
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+}
+
+.searchForm {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 480px;
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.results {
+  list-style: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  max-width: 480px;
+  overflow: hidden;
+}
+
+.resultBtn {
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+
+.resultBtn:hover {
+  background: var(--bg-hover);
+}
+
+.error {
+  color: var(--danger);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.panel {
+  margin-top: 0.5rem;
+}
+
+.current {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.currentMain {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.icon {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.temp {
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.condition {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.placeName {
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.metaLabel {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  margin-bottom: 0.1rem;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.6rem;
+}
+
+.day {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 0.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.dayName {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.dayIcon {
+  font-size: 1.5rem;
+}
+
+.dayTemp {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.dayRain {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}

@@ -1,0 +1,134 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1.5rem;
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+}
+
+.logo {
+  color: var(--accent);
+  font-size: 1.35rem;
+}
+
+.name {
+  background: linear-gradient(135deg, #e8edf7, #a5b4fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: all 0.15s ease;
+}
+
+.navLink:hover {
+  color: var(--text);
+  background: var(--bg-hover);
+}
+
+.navLink.active {
+  color: var(--accent-hover);
+  background: var(--accent-soft);
+}
+
+.navIcon {
+  font-size: 1rem;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.iconBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--text-muted);
+  transition: all 0.15s ease;
+}
+
+.iconBtn:hover {
+  color: var(--text);
+  background: var(--bg-hover);
+}
+
+.main {
+  flex: 1;
+  padding-bottom: 3rem; /* keeps content clear of the docked mini player */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.footerNote {
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.75rem 1rem;
+  }
+  .nav {
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: center;
+  }
+}
+
+[data-theme='light'] .header {
+  background: rgba(244, 246, 251, 0.88);
+}

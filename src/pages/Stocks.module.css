@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  max-width: 520px;
+}
+
+.updated {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  font-family: var(--mono);
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr:hover {
+  background: var(--bg-hover);
+}
+
+.right {
+  text-align: right;
+}
+
+.symbol {
+  font-weight: 600;
+  font-family: var(--mono);
+  color: var(--accent-hover);
+}
+
+.name {
+  color: var(--text-muted);
+}
+
+.price {
+  font-family: var(--mono);
+  font-weight: 500;
+}
+
+.up {
+  color: var(--success);
+  font-family: var(--mono);
+}
+
+.down {
+  color: var(--danger);
+  font-family: var(--mono);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--mono);
+}
+
+.badgeUp {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--success);
+}
+
+.badgeDown {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--danger);
+}
+
+.chartLink {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.chartLink:hover {
+  color: var(--accent-hover);
+}
+
+.note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.note a {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
