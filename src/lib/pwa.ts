@@ -32,9 +32,11 @@ export function initPwa() {
   }
 }
 
-export function onInstallAvailable(cb: () => void) {
+export function onInstallAvailable(cb: () => void): () => void {
   listeners.add(cb);
-  return () => listeners.delete(cb);
+  return () => {
+    listeners.delete(cb);
+  };
 }
 
 export function canInstall(): boolean {
