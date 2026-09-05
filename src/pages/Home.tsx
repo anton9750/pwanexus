@@ -33,7 +33,7 @@ export function Home() {
     <div className="page">
       <section className={styles.hero}>
         <h1 className={styles.title}>Welcome back</h1>
-        <p className={styles.subtitle}>Your all-purpose command center</p>
+        <p className={styles.subtitle}>emmms school website</p>
 
         <form className={styles.searchForm} onSubmit={handleSearch}>
           <div className={styles.searchBox}>
